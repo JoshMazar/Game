@@ -1,0 +1,69 @@
+<xml>
+	<!-- This file holds info for laying out the Prospector card game. -->
+	
+	<!-- The multiplier is multiplied by the x and y attributes below. -->
+	<!-- This determines how loose or tight the layout is. --> 
+	<multiplier x="1.25" y="1.5" />
+	
+	<!-- In the XML below, id is the number of the card -->
+	<!-- x and y set position -->
+	<!-- faceup is 1 if the card is face-up -->
+	<!-- layer sets the depth layer so cards overlap properly -->
+	<!-- hiddenby is the ids of cards that keep a card face-down -->
+	
+	<!-- Layer0, top row. -->
+	<slot id="0" x="0" y="2" faceup="1" layer="0" hiddenby="2,1"/>
+	
+	<!-- Layer1, the next level. -->
+	<slot id="1" x="-1"  y="1" faceup="1" layer="1" hiddenby="4,3" />
+	<slot id="2" x="1"  y="1" faceup="1" layer="1" hiddenby="5,4" />
+	
+	<!-- Layer2, the next level. -->
+	<slot id="3" x="-2" y="0" faceup="1" layer="2" hiddenby="7,6" />
+	<slot id="4" x="0" y="0" faceup="1" layer="2" hiddenby="8,7" />
+	<slot id="5" x="2" y="0" faceup="1" layer="2" hiddenby="9,8" />
+	
+	<!-- Layer3, the next level. -->
+	<slot id="6" x="-3"  y="-1" faceup="1" layer="3" hiddenby="11,10" />
+	<slot id="7" x="-1"  y="-1" faceup="1" layer="3" hiddenby="12,11" />
+	<slot id="8" x="1"  y="-1" faceup="1" layer="3" hiddenby="13,12" />
+	<slot id="9"  x="3" y="-1" faceup="1" layer="3" hiddenby="14,13" />
+	
+	<!-- Layer4, the next level. -->
+	<slot id="10" x="-4" y="-2" faceup="1" layer="4" hiddenby="16,15" />
+	<slot id="11" x="-2" y="-2" faceup="1" layer="4" hiddenby="17,16" />
+	<slot id="12" x="0" y="-2" faceup="1" layer="4" hiddenby="18,17" />
+	<slot id="13" x="2"  y="-2" faceup="1" layer="4" hiddenby="19,18" />
+	<slot id="14" x="4"  y="-2" faceup="1" layer="4" hiddenby="20,19" />
+	
+	<!-- Layer5, the next level. -->
+	<slot id="15" x="-5"  y="-3" faceup="1" layer="5" hiddenby="22,21" />
+	<slot id="16" x="-3"  y="-3" faceup="1" layer="5" hiddenby="23,22" />
+	<slot id="17" x="-1"  y="-3" faceup="1" layer="5" hiddenby="24,23" />
+	<slot id="18" x="1" y="-3" faceup="1" layer="5" hiddenby="25,24"/>
+	<slot id="19" x="3" y="-3" faceup="1" layer="5" hiddenby="26,25"/>
+	<slot id="20" x="5" y="-3" faceup="1" layer="5" hiddenby="26,27"/>
+
+
+	<!-- Layer6, the last level. -->
+	<slot id="21" x="-6" y="-4" faceup="1" layer="6"/>
+	<slot id="22" x="-4" y="-4" faceup="1" layer="6"/>
+	<slot id="23" x="-2"  y="-4" faceup="1" layer="6"/>
+	<slot id="24" x="0"  y="-4" faceup="1" layer="6"/>
+	<slot id="25" x="2"  y="-4" faceup="1" layer="6"/>
+	<slot id="26" x="4"  y="-4" faceup="1" layer="6"/>
+	<slot id="27" x="6"  y="-4" faceup="1" layer="6"/>
+	
+	
+	
+	
+	<!-- This positions the draw pile and staggers it -->
+	<slot type="drawpile" x="6" y="4" xstagger="0.15" layer="8"/>
+	
+	<!-- This positions the discard pile and target card -->
+	<slot type="discardpile" x="-5" y="4" layer="7"/>
+
+	<!-- This positions the live pile and staggers it -->
+	<slot type="wastePile" x="-8" y="4" layer="7"/>
+</xml>
+	
